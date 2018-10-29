@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.api.model.Contatos;
 import br.com.api.repostory.ContatosRepository;
-import br.com.api.repostory.OperadorasRepository;
 
 @RestController
 @RequestMapping("/contatos")

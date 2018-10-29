@@ -9,8 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonView;
-
 @Entity
 @Table(name = "contatos")
 public class Contatos implements Serializable {
@@ -18,7 +16,7 @@ public class Contatos implements Serializable {
 	private static final long serialVersionUID = 2632545651202252926L;
 
 	@Id
-	@SequenceGenerator(name = "SEQ_GEN",  sequenceName = "SEQ_CONT", allocationSize = 1)
+	@SequenceGenerator(name = "SEQ_GEN", sequenceName = "SEQ_CONT", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GEN")
 	private Long id;
 
